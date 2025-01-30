@@ -109,5 +109,7 @@ events.addListener("spinEnd", (sector) => {
 });
 
 document.getElementById("claimPrize").addEventListener("click", function () {
-  window.location.href = "https://adplaytechnology.com";
+  window.open("https://adplaytechnology.com", "_blank");
+});
+
 });
