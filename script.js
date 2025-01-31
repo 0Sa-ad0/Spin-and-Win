@@ -112,4 +112,3 @@ document.getElementById("claimPrize").addEventListener("click", function () {
   window.open("https://adplaytechnology.com", "_blank");
 });
 
-});
