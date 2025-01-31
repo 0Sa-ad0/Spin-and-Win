@@ -14,3 +14,7 @@ A fun and interactive **mini-game ad** where users spin a wheel to win exciting 
 - **HTML5** for structuring the page
 - **CSS3** for styling and animations
 - **JavaScript (Vanilla JS)** for game logic
+
+## VIDEO
+
+https://github.com/user-attachments/assets/8907c1eb-a841-459b-8152-665936582356
