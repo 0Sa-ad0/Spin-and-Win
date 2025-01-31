@@ -4,19 +4,6 @@
     <meta charset="UTF-8" />
     <title>Spin & Win</title>
     <link rel="stylesheet" href="styles.css" />
-    <style>
-      #realTimeClock {
-        position: fixed;
-        bottom: 10px;
-        right: 10px;
-        font-size: 16px;
-        color: #fff;
-        background: rgba(0, 0, 0, 0.7);
-        padding: 8px 12px;
-        border-radius: 5px;
-        font-family: Arial, sans-serif;
-      }
-    </style>
   </head>
 
   <body>
@@ -32,10 +19,9 @@
       >
         Spin the Wheel & Win a Prize!
       </h2>
-      <canvas id="wheel" width="750" height="750"></canvas>
+      <canvas id="wheel" width="700" height="700"></canvas>
       <div id="spin">SPIN</div>
     </div>
-
     <div id="prizeModal" class="modal">
       <div class="modal-content">
         <h3>Congratulations!</h3>
@@ -43,28 +29,6 @@
         <button id="claimPrize">Claim Prize</button>
       </div>
     </div>
-
-    <div id="realTimeClock"></div>
-
-    <script>
-      function updateClock() {
-        const now = new Date();
-        const hours = now.getHours().toString().padStart(2, "0");
-        const minutes = now.getMinutes().toString().padStart(2, "0");
-        const seconds = now.getSeconds().toString().padStart(2, "0");
-        const day = now.getDate().toString().padStart(2, "0");
-        const month = (now.getMonth() + 1).toString().padStart(2, "0");
-        const year = now.getFullYear();
-
-        document.getElementById(
-          "realTimeClock"
-        ).innerHTML = `${day}/${month}/${year} ${hours}:${minutes}:${seconds}`;
-      }
-
-      setInterval(updateClock, 1000);
-      updateClock();
-    </script>
-
     <script defer src="script.js"></script>
   </body>
 </html>
